@@ -1,6 +1,12 @@
 # 🎯 Market Tension Radar
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://market-tension-radar.streamlit.app)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-orange)
+
 > **Proof of concept** — Outil de scoring d'adéquation candidat × offres d'emploi, construit avec l'IA sans background technique.
+>
+> 📖 **Transparence totale :** lisez [`PROMPT_LOG.md`](PROMPT_LOG.md) pour voir exactement comment j'ai piloté l'IA à chaque étape.
 
 ---
 
