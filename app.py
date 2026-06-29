@@ -267,7 +267,7 @@ with tab3:
         "Progression": 10,
     }
 
-    for _, offre in top.iterrows():
+    for i, (_, offre) in enumerate(top.iterrows()):
         score = offre["score"]
         color = "#00ff88" if score >= 70 else ("#ffd700" if score >= 45 else "#ff4444")
         badge = "🟢 Fort match" if score >= 70 else ("🟡 Moyen" if score >= 45 else "🔴 Faible")
@@ -304,7 +304,7 @@ with tab3:
                     height=320,
                     margin=dict(l=40, r=40, t=20, b=20),
                 )
-                st.plotly_chart(fig_radar, use_container_width=True)
+                st.plotly_chart(fig_radar, use_container_width=True, key=f"radar_top_{i}")
 
     st.divider()
     st.caption("💡 *Ce radar a été construit avec l'IA (Claude) pour démontrer une méthode de travail, pas un background technique. Chaque critère de scoring traduit une logique métier réelle issue de 8 ans d'expérience terrain.*")
